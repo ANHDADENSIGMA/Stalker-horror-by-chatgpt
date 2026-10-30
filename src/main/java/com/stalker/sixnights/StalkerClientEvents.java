@@ -92,7 +92,7 @@ public final class StalkerClientEvents {
         }
 
         @SubscribeEvent
-        public static void fogDistance(ViewportEvent.ComputeFogDistance event) {
+        public static void fogDistance(ViewportEvent.RenderFog event) {
             Minecraft mc = Minecraft.getInstance();
             Entity camera = event.getCamera().getEntity();
             if (mc.level == null || camera == null) return;
